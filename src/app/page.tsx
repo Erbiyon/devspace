@@ -22,6 +22,7 @@ import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { ModeToggle } from "@/components/mode-toggle"
 import { CopyEmailButton } from "@/components/copy-email-button"
+import { GitHubShowcaseSection } from "@/components/github-showcase"
 import { profileData, featuredProjects, skillCategories } from "@/content/portfolio-data"
 
 export default function HomePage() {
@@ -43,6 +44,7 @@ export default function HomePage() {
           <nav className="hidden md:flex items-center gap-6 text-xs font-mono font-medium text-muted-foreground">
             <a href="#about" className="transition hover:text-emerald-400">About</a>
             <a href="#projects" className="transition hover:text-emerald-400">Projects</a>
+            <a href="#github" className="transition hover:text-emerald-400">GitHub</a>
             <a href="#skills" className="transition hover:text-emerald-400">Skills</a>
             <a href="#contact" className="transition hover:text-emerald-400">Contact</a>
           </nav>
@@ -240,6 +242,11 @@ export default function HomePage() {
             ))}
           </div>
         </section>
+
+        {/* Section 2.5: GitHub Hybrid Showcase */}
+        <React.Suspense fallback={<div className="h-48 rounded-xl border border-border/40 bg-card/40 animate-pulse" />}>
+          <GitHubShowcaseSection />
+        </React.Suspense>
 
         {/* Section 3: Technical Skills & Architecture Matrix */}
         <section id="skills" className="space-y-6">
