@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Antigravity / Gemini Workspace Configuration
+.gemini/*
+!.gemini/skills/
+!.gemini/rules/

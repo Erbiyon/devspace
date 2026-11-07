@@ -20,3 +20,4 @@ pnpm lint
 pnpm build
 ```
 Verify that all routes prerender statically without hydration mismatches or dynamic date leaks in Client Components.
+

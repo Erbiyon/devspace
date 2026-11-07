@@ -41,3 +41,4 @@ export function CopyEmailButton({ email }: CopyEmailButtonProps) {
     </Button>
   )
 }
+
