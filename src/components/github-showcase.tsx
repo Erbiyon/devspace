@@ -1,12 +1,16 @@
-import { getFeaturedRepos, GitHubRepo } from "@/lib/github"
+"use client"
+
+import { GitHubRepo } from "@/lib/github"
 import { GithubIcon } from "@/components/social-icons"
 import { GitFork, Star, ArrowUpRight, FolderGit2 } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-export async function GitHubShowcaseSection() {
-  const repos = await getFeaturedRepos("octocat")
+interface GitHubShowcaseProps {
+  repos: GitHubRepo[]
+}
 
+export function GitHubShowcase({ repos }: GitHubShowcaseProps) {
   return (
     <section id="github" className="space-y-6">
       <div className="flex items-end justify-between border-b border-border/40 pb-4">
@@ -91,4 +95,3 @@ export async function GitHubShowcaseSection() {
     </section>
   )
 }
-
