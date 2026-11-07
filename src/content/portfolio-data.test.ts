@@ -13,3 +13,4 @@ describe("Portfolio Data Integrity", () => {
     expect(featuredProjects[0].title).toBeDefined()
   })
 })
+
