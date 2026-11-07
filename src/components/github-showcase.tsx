@@ -24,7 +24,7 @@ export function GitHubShowcase({ repos }: GitHubShowcaseProps) {
           </h2>
         </div>
         <a
-          href="https://github.com"
+          href="https://github.com/Erbiyon"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xs font-mono text-muted-foreground hover:text-emerald-400 flex items-center gap-1 transition"

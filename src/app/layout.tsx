@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip"
 import { Toaster } from "sonner"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { JsonLd } from "@/components/json-ld"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
