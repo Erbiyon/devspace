@@ -18,8 +18,49 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "DevSpace — Senior Full-Stack & UI Architect Portfolio",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://devspace-portfolio.vercel.app"),
+  title: {
+    default: "DevSpace — Senior Full-Stack & UI Architect Portfolio",
+    template: "%s | DevSpace",
+  },
   description: "Production-ready developer portfolio showcasing high-performance web systems, modern design architecture, and engineering craftsmanship.",
+  keywords: [
+    "Full-Stack Engineer",
+    "Frontend Architect",
+    "Next.js 16",
+    "React 19",
+    "Tailwind CSS v4",
+    "TypeScript",
+    "Portfolio",
+    "Software Engineer",
+  ],
+  authors: [{ name: "DevSpace Portfolio" }],
+  creator: "DevSpace",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "/",
+    title: "DevSpace — Senior Full-Stack & UI Architect Portfolio",
+    description: "Production-ready developer portfolio showcasing high-performance web systems, modern design architecture, and engineering craftsmanship.",
+    siteName: "DevSpace Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DevSpace — Senior Full-Stack & UI Architect Portfolio",
+    description: "Production-ready developer portfolio showcasing high-performance web systems, modern design architecture, and engineering craftsmanship.",
+    creator: "@devspace",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function RootLayout({
