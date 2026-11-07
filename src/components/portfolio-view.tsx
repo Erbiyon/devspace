@@ -43,7 +43,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
             <span className="font-mono text-sm font-semibold tracking-tight">devspace<span className="text-emerald-500">.io</span></span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6 text-xs font-mono font-medium text-muted-foreground">
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
             <a href="#about" className="transition hover:text-emerald-400">About</a>
             <a href="#projects" className="transition hover:text-emerald-400">Projects</a>
             <a href="#github" className="transition hover:text-emerald-400">GitHub</a>
@@ -78,7 +78,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                   </span>
-                  <Badge variant="outline" className="border-emerald-500/20 bg-emerald-500/10 text-emerald-500 text-[11px] font-mono">
+                  <Badge variant="outline" className="border-emerald-500/20 bg-emerald-500/10 text-emerald-500 text-xs">
                     {profileData.status}
                   </Badge>
                 </div>
@@ -96,7 +96,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                 <div className="flex flex-wrap items-center gap-3 pt-2">
                   <a
                     href="#projects"
-                    className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-4 py-2 font-mono text-xs font-semibold text-zinc-950 shadow-sm transition hover:bg-emerald-400"
+                    className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-zinc-950 shadow-sm transition hover:bg-emerald-400"
                   >
                     Explore Works <ArrowUpRight className="ml-1 h-3.5 w-3.5" />
                   </a>
@@ -104,7 +104,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                     href={profileData.socials.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-2 font-mono text-xs transition hover:border-emerald-500/50 hover:bg-accent"
+                    className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-2 text-sm transition hover:border-emerald-500/50 hover:bg-accent"
                   >
                     <GithubIcon className="mr-1.5 h-3.5 w-3.5" /> GitHub
                   </a>
@@ -112,7 +112,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                     href={profileData.socials.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-2 font-mono text-xs transition hover:border-emerald-500/50 hover:bg-accent"
+                    className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-2 text-sm transition hover:border-emerald-500/50 hover:bg-accent"
                   >
                     <LinkedinIcon className="mr-1.5 h-3.5 w-3.5" /> LinkedIn
                   </a>
@@ -136,25 +136,25 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                 </Avatar>
                 <div>
                   <h3 className="font-bold text-lg">{profileData.title}</h3>
-                  <p className="text-xs font-mono text-muted-foreground mt-1 flex items-center gap-1">
+                  <p className="text-sm text-muted-foreground mt-1 flex items-center gap-1">
                     <span className="inline-block h-1.5 w-1.5 rounded-full bg-muted-foreground/60" />
                     {profileData.location}
                   </p>
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-border/40 space-y-3 font-mono text-xs text-muted-foreground">
+              <div className="pt-6 border-t border-border/40 space-y-3 text-sm text-muted-foreground">
                 <div className="flex justify-between">
                   <span>Architecture</span>
-                  <span className="text-emerald-400">Next.js 16 + React 19</span>
+                  <span className="text-emerald-400 font-medium">Next.js 16 + React 19</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Tooling</span>
-                  <span className="text-foreground">pnpm Strict</span>
+                  <span className="text-foreground font-medium">pnpm Strict</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Accessibility</span>
-                  <span className="text-emerald-400">WCAG 2.2 AA</span>
+                  <span className="text-emerald-400 font-medium">WCAG 2.2 AA</span>
                 </div>
               </div>
             </Card>
@@ -166,7 +166,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
         <section id="projects" className="space-y-6">
           <div className="flex items-end justify-between border-b border-border/40 pb-4">
             <div>
-              <div className="flex items-center gap-2 text-emerald-400 font-mono text-xs">
+              <div className="flex items-center gap-2 text-emerald-400 text-xs font-medium">
                 <Sparkles className="h-3.5 w-3.5" />
                 <span>ENGINEERING SHOWCASE</span>
               </div>
@@ -176,7 +176,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
               href={profileData.socials.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-mono text-muted-foreground hover:text-emerald-400 flex items-center gap-1 transition"
+              className="text-sm text-muted-foreground hover:text-emerald-400 flex items-center gap-1 transition"
             >
               All repositories <ArrowUpRight className="h-3 w-3" />
             </a>
@@ -225,7 +225,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                         href={project.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center font-mono text-xs text-emerald-400 hover:text-emerald-300 transition"
+                        className="inline-flex items-center text-sm font-medium text-emerald-400 hover:text-emerald-300 transition"
                       >
                         Live Preview <ExternalLink className="ml-1 h-3 w-3" />
                       </a>
@@ -233,7 +233,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="ml-auto inline-flex items-center font-mono text-xs text-muted-foreground hover:text-foreground transition"
+                        className="ml-auto inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition"
                       >
                         Source <GithubIcon className="ml-1 h-3 w-3" />
                       </a>
@@ -251,7 +251,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
         {/* Section 3: Technical Skills & Architecture Matrix */}
         <section id="skills" className="space-y-6">
           <div className="border-b border-border/40 pb-4">
-            <div className="flex items-center gap-2 text-emerald-400 font-mono text-xs">
+            <div className="flex items-center gap-2 text-emerald-400 text-xs font-medium">
               <Layers className="h-3.5 w-3.5" />
               <span>CORE COMPETENCIES</span>
             </div>
@@ -268,7 +268,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
               >
                 <Card className="h-full border-border/50 bg-card/60 backdrop-blur-sm p-6 space-y-4">
-                  <h3 className="font-mono text-sm font-semibold text-emerald-400">{cat.category}</h3>
+                  <h3 className="text-base font-semibold text-emerald-400">{cat.category}</h3>
                   <div className="space-y-2.5">
                     {cat.skills.map((skill) => (
                       <div key={skill.name} className="flex items-center justify-between text-sm">
@@ -288,13 +288,13 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
         {/* Section 4: Contact & Footer */}
         <section id="contact" className="rounded-3xl border border-border/50 bg-card/60 backdrop-blur-sm p-8 md:p-12 text-center space-y-6">
           <div className="mx-auto max-w-xl space-y-3">
-            <Badge variant="outline" className="border-emerald-500/20 bg-emerald-500/10 text-emerald-400 font-mono text-xs">
+            <Badge variant="outline" className="border-emerald-500/20 bg-emerald-500/10 text-emerald-400 text-xs font-medium">
               Let&apos;s Build Together
             </Badge>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
               Ready to create exceptional digital products?
             </h2>
-            <p className="text-sm md:text-base text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Feel free to reach out for consulting, technical leadership, or high-impact engineering opportunities.
             </p>
           </div>
@@ -305,7 +305,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
               href={profileData.socials.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-1.5 font-mono text-xs transition hover:border-emerald-500/50 hover:bg-accent"
+              className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-1.5 text-sm transition hover:border-emerald-500/50 hover:bg-accent"
             >
               <GithubIcon className="mr-1.5 h-3.5 w-3.5" /> GitHub
             </a>
@@ -313,7 +313,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
               href={profileData.socials.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-1.5 font-mono text-xs transition hover:border-emerald-500/50 hover:bg-accent"
+              className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-1.5 text-sm transition hover:border-emerald-500/50 hover:bg-accent"
             >
               <LinkedinIcon className="mr-1.5 h-3.5 w-3.5" /> LinkedIn
             </a>
@@ -321,7 +321,7 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
               href={profileData.socials.twitter}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-1.5 font-mono text-xs transition hover:border-emerald-500/50 hover:bg-accent"
+              className="inline-flex items-center justify-center rounded-full border border-border/50 px-3.5 py-1.5 text-sm transition hover:border-emerald-500/50 hover:bg-accent"
             >
               <TwitterIcon className="mr-1.5 h-3.5 w-3.5" /> Twitter / X
             </a>
@@ -331,8 +331,8 @@ export function PortfolioView({ githubRepos }: PortfolioViewProps) {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-border/40 py-8 text-center text-xs font-mono text-muted-foreground">
-        <p>© 2026 DevSpace Portfolio. Crafted with Next.js 16, React 19, Tailwind CSS v4 &amp; shadcn/ui.</p>
+      <footer className="border-t border-border/40 py-8 text-center text-sm text-muted-foreground">
+        <p>© 2026 DevSpace Portfolio. พัฒนาด้วย Next.js 16, React 19, Tailwind CSS v4 &amp; shadcn/ui.</p>
       </footer>
     </div>
   )

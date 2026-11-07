@@ -120,11 +120,13 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: var(--font-sarabun), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sarabun), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   }
   html {
-    @apply font-sans;
+    font-family: var(--font-sarabun), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   }
 }

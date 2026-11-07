@@ -15,7 +15,7 @@ export function GitHubShowcase({ repos }: GitHubShowcaseProps) {
     <section id="github" className="space-y-6">
       <div className="flex items-end justify-between border-b border-border/40 pb-4">
         <div>
-          <div className="flex items-center gap-2 text-emerald-400 font-mono text-xs">
+          <div className="flex items-center gap-2 text-emerald-400 text-xs font-medium">
             <FolderGit2 className="h-3.5 w-3.5" />
             <span>OPEN SOURCE &amp; REPOSITORIES</span>
           </div>
@@ -27,7 +27,7 @@ export function GitHubShowcase({ repos }: GitHubShowcaseProps) {
           href="https://github.com/Erbiyon"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs font-mono text-muted-foreground hover:text-emerald-400 flex items-center gap-1 transition"
+          className="text-sm text-muted-foreground hover:text-emerald-400 flex items-center gap-1 transition"
         >
           View GitHub Profile <ArrowUpRight className="h-3 w-3" />
         </a>
@@ -45,12 +45,12 @@ export function GitHubShowcase({ repos }: GitHubShowcaseProps) {
                   href={repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-mono text-sm font-bold text-foreground group-hover:text-emerald-400 transition"
+                  className="flex items-center gap-2 text-base font-bold text-foreground group-hover:text-emerald-400 transition"
                 >
                   <GithubIcon className="h-4 w-4 text-muted-foreground group-hover:text-emerald-400" />
                   {repo.name}
                 </a>
-                <div className="flex items-center gap-3 font-mono text-xs text-muted-foreground">
+                <div className="flex items-center gap-3 text-xs text-muted-foreground">
                   <span className="flex items-center gap-1">
                     <Star className="h-3.5 w-3.5 fill-amber-400/80 text-amber-400" />
                     {repo.stargazers_count}
@@ -69,12 +69,12 @@ export function GitHubShowcase({ repos }: GitHubShowcaseProps) {
               <div className="flex items-center justify-between pt-3 border-t border-border/30">
                 <div className="flex items-center gap-1.5">
                   {repo.language && (
-                    <Badge variant="secondary" className="font-mono text-[10px] bg-secondary/40 text-muted-foreground">
+                    <Badge variant="secondary" className="text-[11px] bg-secondary/40 text-muted-foreground">
                       {repo.language}
                     </Badge>
                   )}
                   {repo.topics?.slice(0, 2).map((topic) => (
-                    <Badge key={topic} variant="outline" className="font-mono text-[10px] text-muted-foreground border-border/40">
+                    <Badge key={topic} variant="outline" className="text-[11px] text-muted-foreground border-border/40">
                       #{topic}
                     </Badge>
                   ))}
@@ -83,7 +83,7 @@ export function GitHubShowcase({ repos }: GitHubShowcaseProps) {
                   href={repo.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center font-mono text-[11px] text-emerald-400 hover:text-emerald-300"
+                  className="inline-flex items-center text-xs text-emerald-400 hover:text-emerald-300 font-medium"
                 >
                   Repo <ArrowUpRight className="ml-0.5 h-3 w-3" />
                 </a>
