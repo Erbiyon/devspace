@@ -1,7 +1,7 @@
 import { getFeaturedRepos, GitHubRepo } from "@/lib/github"
 import { GithubIcon } from "@/components/social-icons"
 import { GitFork, Star, ArrowUpRight, FolderGit2 } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 export async function GitHubShowcaseSection() {
@@ -91,3 +91,4 @@ export async function GitHubShowcaseSection() {
     </section>
   )
 }
+

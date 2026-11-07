@@ -10,13 +10,11 @@ import {
   Sparkles,
   Layers,
   ArrowUpRight,
-  GitFork,
   Star,
   CheckCircle2,
 } from "lucide-react"
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/social-icons"
 
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
